@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Ünikolik</string>
+    <string name="client_id">328139839037-7g0dk436vilj1nvm8qvtor0rcmkvt96k.apps.googleusercontent.com</string>
+    <string-array name="lessons">
+        <item>TYT - Türkçe</item>
+        <item>TYT - Matematik</item>
+        <item>TYT - Geometri</item>
+        <item>TYT - Tarih</item>
+        <item>TYT - Coğrafya</item>
+        <item>TYT - Felsefe</item>
+        <item>TYT - Din Kültürü</item>
+        <item>TYT - Fizik</item>
+        <item>TYT - Kimya</item>
+        <item>TYT - Biyoloji</item>
+        <item>AYT - Matematik</item>
+        <item>AYT - Geometri</item>
+        <item>AYT - Fizik</item>
+        <item>AYT - Kimya</item>
+        <item>AYT - Biyoloji</item>
+        <item>AYT - Edebiyat</item>
+        <item>AYT - Tarih</item>
+        <item>AYT - Coğrafya</item>
+        <item>AYT - Felsefe</item>
+        <item>AYT - Din Kültürü</item>
+        <item>YDT - Yabancı Dil</item>
+    </string-array>
+    <string-array name="choose_quiz_type">
+        <item>TYT (1. Oturum)</item>
+        <item>AYT (2. Oturum)</item>
+    </string-array>
+    <string-array name="timer">
+        <item>TYT (165 dakika)</item>
+        <item>AYT (180 dakika)</item>
+    </string-array>
+</resources>

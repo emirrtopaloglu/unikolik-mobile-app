@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.AddQuizAytActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_left_arrow"
+        android:layout_marginTop="-120px"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:onClick="backTo"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:useDefaultMargins="true"
+            android:layout_gravity="center_horizontal"
+            android:rowCount="250"
+            android:columnCount="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@drawable/toolbar_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="AYT Deneme Sonuçları"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="8"
+                android:background="@drawable/toolbar_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edebiyat (24)"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/aytEdebiyatDogru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="D"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_green_dark"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+                <EditText
+                    android:id="@+id/aytEdebiyatYanlis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Y"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_red_light"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="8"
+                android:background="@drawable/toolbar_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tarih-1 (10)"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/aytTarihBirDogru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="D"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_green_dark"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+                <EditText
+                    android:id="@+id/aytTarihBirYanlis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Y"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_red_light"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="8"
+                android:background="@drawable/toolbar_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Coğrafya (6)"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/aytCografyaBirDogru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="D"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_green_dark"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+                <EditText
+                    android:id="@+id/aytCografyaBirYanlis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Y"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_red_light"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="8"
+                android:background="@drawable/toolbar_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tarih-2 (11)"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/aytTarihIkiDogru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="D"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_green_dark"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+                <EditText
+                    android:id="@+id/aytTarihIkiYanlis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Y"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_red_light"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="8"
+                android:background="@drawable/toolbar_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Coğrafya-2 (11)"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/aytCografyaIkiDogru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="D"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_green_dark"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+                <EditText
+                    android:id="@+id/aytCografyaIkiYanlis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Y"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_red_light"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="8"
+                android:background="@drawable/toolbar_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Felsefe (12)"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/aytFelsefeDogru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="D"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_green_dark"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+                <EditText
+                    android:id="@+id/aytFelsefeYanlis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Y"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_red_light"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="8"
+                android:background="@drawable/toolbar_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Din-Felsefe (6)"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/aytDinDogru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="D"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_green_dark"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+                <EditText
+                    android:id="@+id/aytDinYanlis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Y"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_red_light"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="8"
+                android:background="@drawable/toolbar_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Matematik (40)"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/aytMatematikDogru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="D"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_green_dark"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+                <EditText
+                    android:id="@+id/aytMatematikYanlis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Y"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_red_light"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="8"
+                android:background="@drawable/toolbar_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fizik (14)"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/aytFizikDogru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="D"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_green_dark"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+                <EditText
+                    android:id="@+id/aytFizikYanlis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Y"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_red_light"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="8"
+                android:background="@drawable/toolbar_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kimya (13)"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/aytKimyaDogru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="D"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_green_dark"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+                <EditText
+                    android:id="@+id/aytKimyaYanlis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Y"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_red_light"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="8"
+                android:background="@drawable/toolbar_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Biyoloji (13)"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/aytBiyolojiDogru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="D"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_green_dark"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+                <EditText
+                    android:id="@+id/aytBiyolojiYanlis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Y"
+                    android:maxLength="2"
+                    android:textColorHint="@android:color/holo_red_light"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_weight="3"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:maxLines="1"
+                    android:background="@drawable/text_input"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/toolbar_background">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/addButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Ekle"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="addQuiz"/>
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:paddingTop="15dp"
+                    android:layout_marginBottom="15dp"/>
+
+            </LinearLayout>
+
+        </GridLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.ReportActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_left_arrow"
+        android:layout_marginTop="-120px"
+        android:layout_marginLeft="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:onClick="backTo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/reportTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Talep, öneri ve şikayetlerinizi bu formdan bize gönderebilirsiniz."
+            android:fontFamily="@font/nunito_regular"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/reportEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mesajınızı buraya yazın..."
+            android:background="@drawable/text_input"
+            android:layout_marginVertical="30dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Gönder"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

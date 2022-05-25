@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "328139839037",
+    "project_id": "unikolik-6f959",
+    "storage_bucket": "unikolik-6f959.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328139839037:android:02870bd05093b0ead8fc54",
+        "android_client_info": {
+          "package_name": "com.emirtopaloglu.unikolik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328139839037-7jtcrg7m7e7nbvntpr15ovboghdrk1uq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.emirtopaloglu.unikolik",
+            "certificate_hash": "29d20e806d05a274d90dc683383bedc9d7028daf"
+          }
+        },
+        {
+          "client_id": "328139839037-7g0dk436vilj1nvm8qvtor0rcmkvt96k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgH5g4a1BxEThJ50UI5i-U-jzqBsRoL4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328139839037-7g0dk436vilj1nvm8qvtor0rcmkvt96k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

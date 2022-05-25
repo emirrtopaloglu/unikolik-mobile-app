@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.emirtopaloglu.unikolik">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_uniyardim"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_uniyardim"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Unikolik">
+        <activity
+            android:name=".View.ReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.SpotifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.CountdownActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.StatsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.AddQuizAytActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.AddQuizTytActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.QuizTrackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.YksCalculatorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.ToolsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.PostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.AddPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.FeedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.DailyGoalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.PreloginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

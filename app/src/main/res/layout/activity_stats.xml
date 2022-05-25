@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.StatsActivity"
+    android:orientation="vertical">
+
+  <include layout="@layout/toolbar" />
+
+  <ImageView
+      android:layout_width="35dp"
+      android:layout_height="35dp"
+      android:src="@drawable/ic_left_arrow"
+      android:layout_marginTop="-120px"
+      android:layout_marginBottom="10dp"
+      android:layout_marginLeft="10dp"
+      android:clickable="true"
+      android:focusable="true"
+      android:background="?attr/selectableItemBackground"
+      android:onClick="backTo"/>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingBottom="25dp"
+      android:layout_gravity="center">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:useDefaultMargins="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="10dp"
+        android:columnCount="1">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Soru ve Deneme İstatistikleri"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/toplamSoru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Çözülen Toplam Soru Sayısı"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/toplamTytDeneme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Çözülen Toplam TYT Denemesi Sayısı"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/toplamAytDeneme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Çözülen Toplam AYT Denemesi Sayısı"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="TYT Net İstatistikleri"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/ortTytNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Ortalama TYT Neti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/ortTytMatematikNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Ortalama TYT Matematik Neti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/ortTytTurkceNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Ortalama TYT Türkçe Neti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/ortTytSosyalNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Ortalama TYT Sosyal Bilimler Neti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/ortTytFenNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Ortalama TYT Fen Bilimleri Neti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="AYT Net İstatistikleri"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/ortAytSayNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Ortalama AYT Sayısal Neti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/ortAytEaNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Ortalama AYT Eşit Ağırlık Neti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/ortAytSozNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Ortalama AYT Sözel Neti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/ortAytEdebiyatNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Ortalama AYT Edebiyat Neti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/ortAytMatematikNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Ortalama AYT Matematik Neti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/ortAytFizikNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Ortalama AYT Fizik Neti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/ortAytKimyaNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Ortalama AYT Kimya Neti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/ortAytBiyolojiNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Ortalama AYT Biyoloji Neti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/ortAytTarihBirNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Ortalama AYT Tarih-1 Neti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/ortAytTarihIkiNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Ortalama AYT Tarih-2 Neti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/ortAytCografyaBirNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Ortalama AYT Coğrafya-1 Neti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/ortAytCografyaIkiNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Ortalama AYT Coğrafya-2 Neti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/ortAytFelsefeNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Ortalama AYT Felsefe Neti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/text_input"
+          android:orientation="vertical"
+          android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/ortAytDinFelsefeNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="5"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Ortalama AYT Din/Felsefe Neti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+      </LinearLayout>
+
+    </GridLayout>
+
+  </ScrollView>
+
+</LinearLayout>

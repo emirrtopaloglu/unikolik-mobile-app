@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/toolbar_background">
+
+        <RelativeLayout
+            android:id="@+id/quizTrackTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="10dp"
+            android:background="?selectableItemBackground">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deneme"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/quizdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01/01/1900 00:00"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/quizTrackDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/lesson1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/lesson1Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/nunito_medium"
+                    android:text="Ders"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/lesson1Stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D / Y / N"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lesson2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/lesson2Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ders"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/lesson2Stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D / Y / N"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lesson3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/lesson3Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ders"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/lesson3Stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D / Y / N"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lesson4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/lesson4Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ders"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/lesson4Stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D / Y / N"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lesson5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/lesson5Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ders"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/lesson5Stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D / Y / N"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lesson6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/lesson6Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ders"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/lesson6Stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D / Y / N"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lesson7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/lesson7Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ders"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/lesson7Stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D / Y / N"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lesson8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/lesson8Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ders"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/lesson8Stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D / Y / N"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lesson9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/lesson9Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ders"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/lesson9Stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D / Y / N"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lesson10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/lesson10Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ders"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/lesson10Stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D / Y / N"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lesson11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/toolbar_background">
+
+                <TextView
+                    android:id="@+id/lesson11Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ders"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/lesson11Stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D / Y / N"
+                    android:fontFamily="@font/nunito_medium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/result1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/result1Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sayısal (SAY)"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/result1Stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Net"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/result2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/result2Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eşit Ağırlık (EA)"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/result2Stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Net"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/result3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/result3Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sözel (SÖZ)"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/result3Stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Net"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

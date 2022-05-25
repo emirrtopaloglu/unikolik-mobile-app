@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="60dp">
+
+    <include layout="@layout/toolbar"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_left_arrow"
+        android:layout_marginTop="-120px"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:onClick="backTo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/toolbar_background">
+
+        <ImageView
+            android:id="@+id/feedPhoto"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/feedUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text=""
+                android:fontFamily="@font/nunito_bold"
+                android:layout_marginBottom="3dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/feedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunito_regular"
+                android:layout_marginBottom="5dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/feedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/gray"
+                android:fontFamily="@font/nunito_regular"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/toolbar_background"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Yorumlar"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_marginBottom="3dp"
+            android:textSize="18sp"
+            android:textAlignment="viewStart"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/toolbar_background"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/commentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_input"
+            android:textColor="@color/black"
+            android:hint="Yorum yap..."
+            android:textColorHint="@color/gray"
+            android:layout_weight="0.95"
+            android:layout_marginEnd="15dp"/>
+
+        <Button
+            android:id="@+id/commentButton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="11dp"
+            android:layout_marginRight="1dp"
+            android:onClick="sendComment"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/ic_send"
+            android:layout_weight="0.05"/>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/commentsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout"
+        android:layout_marginTop="-60dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/BottomNavigationBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            app:itemRippleColor="@color/primary"
+            app:itemTextColor="@color/primary"
+            app:menu="@menu/bottom_navigation_menu" />
+
+    </RelativeLayout>
+
+</LinearLayout>

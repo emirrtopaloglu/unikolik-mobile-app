@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tyt_turkce">
+        <item>Sözcükte Anlam</item>
+        <item>Cümlede Anlam</item>
+        <item>Paragraf</item>
+        <item>Sözcük Türleri</item>
+        <item>Tamlamalar</item>
+        <item>Fiiller</item>
+        <item>Ekler</item>
+        <item>Sözcükte Yapı</item>
+        <item>Cümlenin Ögeleri</item>
+        <item>Cümle Çeşitleri</item>
+        <item>Ses Bilgisi</item>
+        <item>Anlatım Bozuklukları</item>
+        <item>Yazım Kuralları</item>
+        <item>Noktalama İşaretleri</item>
+    </string-array>
+    <string-array name="tyt_matematik">
+        <item>Temel Kavramlar</item>
+        <item>Sayı Basamakları</item>
+        <item>Bölme - Bölünebilme Kuralları</item>
+        <item>Asal Sayılar</item>
+        <item>EBOB - EKOK</item>
+        <item>Rasyonel Sayılar</item>
+        <item>Basit Eşitsizlikler</item>
+        <item>Mutlak Değer</item>
+        <item>Üslü Sayılar</item>
+        <item>Köklü Sayılar</item>
+        <item>Çarpanlara Ayırma</item>
+        <item>I. Dereceden Denklemler</item>
+        <item>Oran-Orantı</item>
+        <item>Problemler</item>
+        <item>Mantık</item>
+        <item>Kümeler</item>
+        <item>Fonksiyonlar</item>
+        <item>II. Dereceden Denklemler</item>
+        <item>Permütasyon</item>
+        <item>Kombinasyon</item>
+        <item>Binom Açılımı</item>
+        <item>Olasılık</item>
+        <item>İstatistik</item>
+        <item>Fonksiyonlar</item>
+        <item>Polinomlar</item>
+    </string-array>
+    <string-array name="tyt_geometri">
+        <item>Açılar ve Üçgenler</item>
+        <item>Doğruda Açılar</item>
+        <item>Üçgende Açılar</item>
+        <item>Dik Üçgen</item>
+        <item>Özel Üçgen</item>
+        <item>İkizkenar Üçgen</item>
+        <item>Eşkenar Üçgen</item>
+        <item>Açı Kenar Bağıntıları</item>
+        <item>Üçgende Eşlik</item>
+        <item>Üçgende Benzerlik</item>
+        <item>Üçgende Açıortay</item>
+        <item>Üçgende Kenarortay</item>
+        <item>Üçgende Alan</item>
+        <item>Çokgenler</item>
+        <item>Dörtgenler</item>
+        <item>Yamuk</item>
+        <item>Paralelkenar</item>
+        <item>Eşkenar Dörtgen</item>
+        <item>Deltoid</item>
+        <item>Dikdörtgen</item>
+        <item>Kare</item>
+        <item>Çember ve Daire</item>
+        <item>Doğrunun Analitik İncelenmesi</item>
+        <item>Katı Cisimler</item>
+        <item>Dikdörtgenler Prizması</item>
+        <item>Küp</item>
+        <item>Silindir</item>
+        <item>Piramit</item>
+        <item>Koni</item>
+        <item>Küre</item>
+    </string-array>
+    <string-array name="tyt_fizik">
+        <item>Fizik Bilimine Giriş</item>
+        <item>Madde Ve Özellikleri</item>
+        <item>Sıvıların Kaldırma Kuvveti</item>
+        <item>Basınç</item>
+        <item>Isı, Sıcaklık ve Genleşme</item>
+        <item>Hareket ve Kuvvet></item>
+        <item>Dinamik</item>
+        <item>İş, Güç  ve  Enerji</item>
+        <item>Elektrostatik</item>
+        <item>Elektrik Akımı</item>
+        <item>Elektriksel Enerji ve Güç</item>
+        <item>Manyetizma</item>
+        <item>Dalgalar</item>
+        <item>Optik</item>
+    </string-array>
+    <string-array name="tyt_kimya">
+        <item>Kimya Bilimi</item>
+        <item>Atomun Yapısı</item>
+        <item>Periyodik Tablo</item>
+        <item>Maddenin Halleri</item>
+        <item>Kimyasal Türler Arası Etkileşimler</item>
+        <item>Kimyasal Hesaplamalar</item>
+        <item>Kimyanın Temel Kanunları</item>
+        <item>Asit, Baz ve Tuz</item>
+        <item>Karışımlar</item>
+        <item>Kimya Her Yerde</item>
+    </string-array>
+    <string-array name="tyt_biyoloji">
+        <item>Canlıların Ortak Özellikleri</item>
+        <item>Canlıların Temel Bileşenleri</item>
+        <item>Hücre ve Organeller</item>
+        <item>Madde Geçişleri</item>
+        <item>Canlıların Sınıflandırılması</item>
+        <item>Hücrede Bölünme</item>
+        <item>Üreme</item>
+        <item>Kalıtım</item>
+        <item>Bitki Biyolojisi</item>
+        <item>Ekosistem</item>
+    </string-array>
+    <string-array name="tyt_cografya">
+        <item>Doğa ve İnsan</item>
+        <item>Dünyanın Şekli ve Hareketleri</item>
+        <item>Coğrafi Konum</item>
+        <item>Harita Bilgisi</item>
+        <item>Atmosfer ve Sıcaklık</item>
+        <item>İklim Bilgisi</item>
+        <item>İç ve Dış Kuvvetler</item>
+        <item>Nüfus ve Yerleşme</item>
+        <item>Türkiye’nin Yer Şekilleri</item>
+        <item>Ekonomik Faaliyetler</item>
+        <item>Bölgeler</item>
+        <item>Uluslararası Ulaşım Hatları</item>
+        <item>Doğal Afetler</item>
+    </string-array>
+    <string-array name="tyt_tarih">
+        <item>Tarih Bilimine Giriş</item>
+        <item>Tarih ve Zaman</item>
+        <item>İlk ve Orta Çağlarda Türk Dünyası</item>
+        <item>İslam Medeniyetinin Doğuşu</item>
+        <item>Türklerin İslamiyet’i Kabulü</item>
+        <item>İlk Türk İslam Devletleri</item>
+        <item>Beylikten Devlete Osmanlı</item>
+        <item>Dünya Gücü Osmanlı</item>
+        <item>Değişim Çağında Avrupa ve Osmanlı</item>
+        <item>Uluslararası İlişkilerde Denge Stratejisi (1774-1914)</item>
+        <item>20. Yüzyıl Başlarında Osmanlı Devleti ve Dünya</item>
+        <item>Milli Mücadele</item>
+        <item>Atatürkçülük ve Türk İnkılabı</item>
+    </string-array>
+    <string-array name="tyt_felsefe">
+        <item>Felsefenin Konusu</item>
+        <item>Bilgi Felsefesi</item>
+        <item>Ahlak Felsefesi</item>
+        <item>Sanat Felsefesi</item>
+        <item>Din Felsefesi</item>
+        <item>Siyaset Felsefesi</item>
+        <item>Bilim Felsefesi</item>
+    </string-array>
+    <string-array name="tyt_din">
+        <item>İnsan ve Din</item>
+        <item>İbadet</item>
+        <item>Hz. Muhammed’in Hayatı ve Örnekliği</item>
+        <item>Vahiy ve Akıl</item>
+        <item>İslam Düşüncesi ve Yorumu</item>
+        <item>İslamda Değerler, Sanat ve Laiklik</item>
+        <item>Yaşayan Dinler</item>
+    </string-array>
+</resources>
